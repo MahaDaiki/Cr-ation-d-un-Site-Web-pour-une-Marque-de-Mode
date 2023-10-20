@@ -1,0 +1,222 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #390153;
+}
+.navbar-conatiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+label.logo{
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'RougeScript-Regular';
+}
+
+nav ul{
+    float: right;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 10%;
+    margin: 0 50px;
+   
+}
+nav ul li a{
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'RougeScript-Regular';
+    margin-left: auto;
+    text-decoration: none;
+   
+}
+@font-face{
+    font-family: 'RougeScript-Regular';
+    src: url(font/RougeScript-Regular.ttf);
+}
+.banner {
+    background-image: url(./img/homme.png);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 32%;
+    top: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.title {
+    position: absolute;
+    font-family: 'RougeScript-Regular';
+    font-size: 2rem;
+     margin-top: 30rem;
+}
+/* .F{
+  
+} */
+.catalogue{
+   text-align: center;
+    font-family: 'RougeScript-Regular';
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 5%;
+}
+.imgc1{
+    width: 30%;
+    float: left;
+    border-radius: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dsc1{
+    color: white;
+    margin-left:   10%;
+ 
+    
+}
+
+.m{
+    display: flex;
+    gap:10%;
+    
+}
+.hh{
+    color: white;
+    width: 100%;
+    display: flex;
+   
+    margin-bottom: 5%;
+   
+}
+
+.cat{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.imgc2{
+    width: 30%;
+    float: right;
+    border-radius: 10%;
+    margin-right: 15%;
+}
+.botona{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 5rem;
+}
+.register{
+    margin: 2rem 0 0 15rem;
+    border-radius: 33px 0 0 33px;
+    padding: 3rem;
+    background-color: #694C76;
+    display:flex;
+    width: 23rem;
+}
+.box{
+    display:flex;
+    text-align: center;
+    width: 17rem;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    border-radius: 33px;
+}
+#address{
+    padding-bottom: 1rem;
+}
+.reg{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.btt{
+    align-items: center;
+    color: white;
+    border: 2px solid white;
+    margin-left: 6rem;
+    padding: .5rem 1rem;
+    border-radius: 14px;
+    text-decoration: none;
+}
+.imgreg{
+    margin-top: 2rem;
+    width: 23rem;
+    border-radius: 0 33px 33px 0;
+}
+.both{
+    display: flex;
+}
+.htxt{
+    font-family: 'RougeScript-Regular';
+    font-size: 3rem;
+    color: white;
+    margin-top: 10rem;
+    text-align: center;
+}
+.help{
+    color: white;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+#text{
+    background: none;
+    width: 30rem;
+    height: 10rem;
+    font-size: 2rem;
+    border: none;
+    border-bottom: 3px solid white;
+    border-radius: 1rem;
+    margin-top: 2rem;
+
+}
+.q{
+    color: white;
+    border-bottom: 3px solid white;
+    margin-left: 5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+}
+.q a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    background-color:#592C6D;
+    width: 100%;
+    height: 40px;
+    
+    
+   
+}
+.ft{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    
+}
