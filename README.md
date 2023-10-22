@@ -1,0 +1,2 @@
+# Cr-ation-d-un-Site-Web-pour-une-Marque-de-Mode
+Ce briefing implique la création de maquettes pour les versions desktop et mobile de chaque page du site web : la page d'accueil, la page du catalogue de produits, et la page d'inscription. Ensuite, transformer ces maquettes en un site web entièrement responsive en utilisant HTML, CSS et JavaScript. De plus, mettre en place un menu de navigation mobile avec une icône "burger" pour assurer une navigation fluide sur les appareils mobiles.
