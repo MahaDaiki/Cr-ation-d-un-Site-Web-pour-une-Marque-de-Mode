@@ -1,6 +1,6 @@
 
 *{
-    padding: 0;
+    
     margin: 0;
     box-sizing: border-box;
     
@@ -14,6 +14,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    
 }
 label.logo{
     color: white;
@@ -23,12 +24,14 @@ label.logo{
 
 nav ul{
     float: right;
+    
 
 }
 nav ul li{
     display: inline-block;
     line-height: 10%;
     margin: 0 50px;
+    
    
 }
 nav ul li a{
@@ -38,6 +41,9 @@ nav ul li a{
     margin-left: auto;
     text-decoration: none;
    
+}
+.active{
+    text-decoration:underline;
 }
 @font-face{
     font-family: 'RougeScript-Regular';
@@ -128,7 +134,6 @@ nav ul li a{
 }
 .secondc p{
     color:white;
-   
     margin-top: 50%;
     margin-left: 50%;
     font-size: 2rem;
@@ -153,42 +158,38 @@ nav ul li a{
     margin-bottom: 5%;
 }
 .imgc1{
-    width: 30%;
-    float: left;
+    width: 500px;
+   
     border-radius: 10%;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 .dsc1{
     color: white;
     margin-left:   10%;
- 
     
 }
 
 .m{
-    display: flex;
-    gap:10%;
-    
+    color: white;
+    padding: 1.5rem;
 }
-.hh{
+/*.hh{
     color: white;
     width: 100%;
     display: flex;
    
     margin-bottom: 5%;
    
-}
+}*/
 
 .cat{
-    display:flex;
-    flex-direction: column;
-    
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center; 
 }
 
 .imgc2{
-    width: 30%;
-    float: right;
+    width: 500px;
     border-radius: 10%;
     margin-right: 15%;
 }
@@ -231,6 +232,7 @@ nav ul li a{
     text-align: center;
     margin-bottom: 1rem;
     font-size: 2rem;
+    background-color: none;
 }
 .btt{
     align-items: center;
@@ -286,9 +288,27 @@ nav ul li a{
     color: white;
     text-decoration: none;
 }
-.lastq{
-    margin-bottom: 10rem;
+.faq .a {
+    display: none;
+    color : white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
 }
+
+.rev1{
+    display: flex;
+    width: 1rem;
+    color:white;
+    font-size: 1rem;
+    align-items: center;
+   text-align: center;
+   margin-left: 10rem;
+    
+
+}
+
 /*Footer*/
 footer{
     background-color:#592C6D;
@@ -305,3 +325,140 @@ footer{
     padding-top: 0.5rem;
     
 }
+/*burger menu */
+.toggle{
+    position: absolute;
+    top:.75rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    width: 30px;
+    height: 21px;
+}
+
+.bar{
+    height:3px;
+    width:100%;
+    background-color: white;
+    border-radius: 33px;
+}
+.navbar-conatiner-burger{
+    display: none;
+}
+
+@media (max-width: 780px) {
+   
+    .imgreg{
+        display:none;
+        
+    }
+    .register{
+        border-radius: 33px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+   .imgc1{
+    width: 300px;
+
+   }
+   .imgc2{
+    width: 300px;
+   }
+
+   .botona{
+    width:8rem;
+   }
+   .f{
+    font-size: 4rem;
+    bottom: 5rem;    
+   }
+   .h{
+    font-size: 4rem;
+    bottom: 2rem;  
+    
+   }
+   .banner p{
+    font-size: 2rem;
+    
+   }
+   .firstc{
+    flex-wrap: wrap;
+    font-size: 2rem;
+    align-items: center;
+   margin-left: 5rem;
+    
+   }
+   .firstc p{
+    margin-top:2rem;
+    font-size: 1.5rem;
+    
+   }
+   .secondc{
+    flex-wrap:  wrap-reverse;
+    font-size: 2rem;
+    align-items: center;
+   margin-left: 5rem;
+    
+   }
+   .secondc p{
+    margin-top:2rem;
+    font-size: 1.5rem;
+
+    
+   }
+   .toggle{
+    display: flex;
+    z-index: 1;
+   }
+
+
+.navbar-conatiner{
+    display: none;
+}
+
+ .navbar-conatiner-burger{
+    display: block;
+ }
+ .navlink{
+    padding: 2rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 46px;
+    right: 0;
+    background-color:#592C6D;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+
+    
+   
+ }
+.show{
+   display: flex; 
+}
+nav ul li {
+    line-height: 3rem;
+   margin: 22px 50px;
+   display: block;
+}
+
+.rev1{
+   flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+   
+}
+  
+}
+
+
+   
+

@@ -6,20 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FashionHub</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     
-    <div class="home-landing">
+    <div >
         <nav class="navbar-conatiner">
             <label class="logo">FH</label>
+               <a href="" class="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a> 
+            <div class="navlink">
             <ul>
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="catalogue.html">Catalogue</a></li>
                 <li><a href="Register.html">Register</a></li>
     
             </ul>
+         </div>
         </nav>
+        <nav class="navbar-conatiner-burger">
+            <label class="logo">FH</label>
+               <a onclick="onClick()" class="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a> 
+            <div class="navlink" id="links">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="Register.html">Register</a></li>
+    
+            </ul>
+         </div>
+        </nav>
+
     </div>
         <section>
         <div class="banner">
@@ -59,19 +84,33 @@
     <a class="botona" href="Register.html">Register</a>
 </section>
 <div class="faq">
-    <h2 class="htxt">Frequently Asked Questions</h2>
+    <h2 class="htxt" id="oo">Frequently Asked Questions</h2>
     <div>
-    <p class="q"> <a href="">What shipping methodes do u offer ?</a></p>
-    <p class="q"> <a href=""> Can I change my order ?</a></p>
-    <p class="q"> <a href="">I cancel my order ?</a> </p>
-    <p class="q"> <a href="">What is your return policy ?</a> </p>
-    <p class="q"> <a href="">happens if my package is lost or stolen ?</a> </p>
-    <p class="q lastq"> <a href="">can I track my package ?</a> </p>
+        <p class="q"><a href="#oo">What shipping methods do you offer?</a></p>
+        <div class="a">Our store offers several shipping methods, including standard shipping,  and overnight shipping. </div>
+
+        <p class="q"><a href="#oo">Can I change my order?</a></p>
+        <div class="a">Yes, you can change your order within 24 hours of placing it. </div>
+
+        <p class="q"><a href="#oo">Can I cancel my order?</a></p>
+        <div class="a">You can cancel your order within 24 hours of placing it. </div>
+
+        <p class="q"><a href="#oo">What is your return policy?</a></p>
+        <div class="a">Our return policy allows you to return items within 30 days of purchase.</div>
+
+        <p class="q"><a href="#oo">What happens if my package is lost or stolen?</a></p>
+        <div class="a">If your package is lost or stolen, please contact our customer support team immediately. </div>
+
+        <p class="q lastq"><a href="#oo">Can I track my package?</a></p>
+        <div class="a lasta">Yes, you can track your package. Once your order is shipped, you will receive a tracking number via email. </div>
+    </div>
 </div>
-</div>
+
+
 <footer>
     <h3 class="ft">© 2023 Copyright. All Rights Reserved.</h3>
 </footer>
+<script src="index.js"></script>
 </body>
 
 </html>

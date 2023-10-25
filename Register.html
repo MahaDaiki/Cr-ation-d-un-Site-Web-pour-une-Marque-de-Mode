@@ -13,14 +13,30 @@
         <label class="logo">FH</label>
         <ul>
             <li><a  href="index.html">Home</a></li>
-            <li><a class="active" href="catalogue.html">Catalogue</a></li>
-            <li><a href="Register.html">Register</a></li>
+            <li><a  href="catalogue.html">Catalogue</a></li>
+            <li><a class="active" href="Register.html">Register</a></li>
 
         </ul>
     </nav>
+    <nav class="navbar-conatiner-burger">
+      <label class="logo">FH</label>
+         <a onclick="onClick()" class="toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </a> 
+      <div class="navlink" id="links">
+      <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="catalogue.html">Catalogue</a></li>
+          <li><a href="Register.html">Register</a></li>
+
+      </ul>
+   </div>
+  </nav>
         <div class="both">
         <div class="register">
-            <form>
+           <!-- <form onsubmit="return validateForm()" novalidate>
                   <div class="reg">
                     <h2>Register</h2>
                   </div>
@@ -29,8 +45,50 @@
                 <input class="box" type="password" id="password" name="password" placeholder="Password">
                 <input class="box" type="number" id="phonenumber" name="phonenumber" placeholder="Phonenumber">
                 <input class="box" type="text" id="address" name="address" placeholder="Address">
-                <br><a href="" class="btt">Register</a>
-            </form>
+                <br><a href="Register.html" class="btt">Register</a>
+            </form>-->
+            <form onsubmit="return validateForm()" novalidate>
+                <div class="reg">
+                    <h2>Register</h2>
+                  </div>
+                  <input  class="box"
+                    type="text"
+                    placeholder="name"
+                    id="name"
+                    name="username"
+                    required
+                  />
+                  <input class="box"
+                    type="email"
+                    placeholder="Email"
+                    id="email"
+                    name="email"
+                    required
+                  />
+               
+               
+                  <input class="box"
+                    type="password"
+                    placeholder="Password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                  <input class="box"
+                   type="number" 
+                   id="phonenumber" 
+                   name="phonenumber" 
+                   placeholder="Phonenumber"
+                   required
+                   />
+                   <input class="box" 
+                   type="text" 
+                   id="address" 
+                   name="address" 
+                   placeholder="Address">
+
+                <button class="btt" type="submit">Register</button>
+              </form>
         </div>
         <img  class="imgreg" src="img/register.jpg" alt="register">
         </div>  
@@ -42,19 +100,88 @@
         <textarea id="text" name="text" placeholder="..."></textarea>
     </form>
 </div>
-<div class="faq">
-    <h1 class="htxt">Frequently Asked Questions</h1>
-    <div>
-    <p class="q"> <a href="">What shipping methodes do u offer ?</a></p>
-    <p class="q"> <a href=""> Can I change my order ?</a></p>
-    <p class="q"> <a href="">I cancel my order ?</a> </p>
-    <p class="q"> <a href="">What is your return policy ?</a> </p>
-    <p class="q"> <a href="">happens if my package is lost or stolen ?</a> </p>
-    <p class="q lastq"> <a href="">can I track my package ?</a> </p>
+<div>
+  <h2 class="htxt">Review</h2>
+  <div class="rev1">
+  <img width=200 src="img/rev.png" alt="icon">
+  <pre > Rating: ★★★★★
+    "These clothes are not only stylish but also incredibly comfortable"
+  </pre>
 </div>
+<div class="rev1">
+    <img width=200 src="img/rev.png" alt="icon">
+  <pre > Rating: ★★★★★★
+    "Absolutely in love with this new clothing line! The designs are fresh"
+  </pre>
+</div>
+
+</div>
+<div class="faq">
+  <h2 class="htxt" id="oo">Frequently Asked Questions</h2>
+  <div>
+      <p class="q"><a href="#oo">What shipping methods do you offer?</a></p>
+      <div class="a">Our store offers several shipping methods, including standard shipping,  and overnight shipping. </div>
+
+      <p class="q"><a href="#oo">Can I change my order?</a></p>
+      <div class="a">Yes, you can change your order within 24 hours of placing it. </div>
+
+      <p class="q"><a href="#oo">Can I cancel my order?</a></p>
+      <div class="a">You can cancel your order within 24 hours of placing it. </div>
+
+      <p class="q"><a href="#oo">What is your return policy?</a></p>
+      <div class="a">Our return policy allows you to return items within 30 days of purchase.</div>
+
+      <p class="q"><a href="#oo">What happens if my package is lost or stolen?</a></p>
+      <div class="a">If your package is lost or stolen, please contact our customer support team immediately. </div>
+
+      <p class="q lastq"><a href="#oo">Can I track my package?</a></p>
+      <div class="a lasta">Yes, you can track your package. Once your order is shipped, you will receive a tracking number via email. </div>
+  </div>
 </div>
 <footer>
     <h3 class="ft">© 2023 Copyright. All Rights Reserved.</h3>
 </footer>
+<script src="index.js"></script>
+<script>
+    // Define the validateForm function
+function validateForm() {
+    // Get values from input fields (username, email, and password)
+    var username = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var phonenumber = document.getElementById("phonenumber").value;
+    // Regex patterns for email and password validation
+    var emailPattern = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
+    var passwordPattern = /^(?=.[A-Za-z])(?=.\d)[A-Za-z\d]{8,}$/;
+    var phonePattern = /^\(\d{3}\) \d{3}-\d{4}$/;
+    // Validate email using regex pattern
+    if (!emailPattern.test(email)) {
+      alert("Invalid email address!"); // Show an alert if email is not valid
+      return false; // Prevent form submission
+    }
+
+    // Validate password using regex pattern
+    if (!passwordPattern.test(password)) {
+      alert(
+        "Password must be at least 8 characters long and contain at least one letter and one number."
+      ); // Show an alert if password is not valid
+      return false; // Prevent form submission
+    }
+
+     // Validate phone number using regex pattern
+     if (!phonePattern.test(phonenumber)) {
+        alert("Invalid phone number. Use the format (xxx) xxx-xxxx.");
+        return false;
+    }
+    // Check if the username is empty
+    if (username === "") {
+      alert("Username is required!"); // Show an alert if username is empty
+      return false; // Prevent form submission
+    }
+
+    // If all validations pass, the form is considered valid and can be submitted
+    return true;
+  }
+</script>
  </body>
 </html>
