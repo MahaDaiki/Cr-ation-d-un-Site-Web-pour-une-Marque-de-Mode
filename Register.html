@@ -152,8 +152,8 @@ function validateForm() {
     var phonenumber = document.getElementById("phonenumber").value;
     // Regex patterns for email and password validation
     var emailPattern = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
-    var passwordPattern = /^(?=.[A-Za-z])(?=.\d)[A-Za-z\d]{8,}$/;
-    var phonePattern = /^\(\d{3}\) \d{3}-\d{4}$/;
+    var passwordPattern = /^(?=.[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    var phonePattern = /^\d{10}$/;
     // Validate email using regex pattern
     if (!emailPattern.test(email)) {
       alert("Invalid email address!"); // Show an alert if email is not valid
